@@ -13,19 +13,19 @@
         <meta name="author" content="<MLPerf.org> mlcommons@googlegroups.com">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.1, mkdocs-material-7.1.9">
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
     
       
-        <title>Docker Runner - MLCube</title>
+        <title>Kubernetes Runner - MLCube</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.ca7ac06f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a57b2b03.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.f1a3b89f.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
         
       
     
@@ -40,7 +40,7 @@
     
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/circular.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/circular.css">
     
     
       
@@ -59,7 +59,7 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    <script>function __prefix(e){return new URL("../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#docker-runner" class="md-skip">
+        <a href="#kubernetes-runner" class="md-skip">
           Skip to content
         </a>
       
@@ -76,9 +76,11 @@
       
     </div>
     
-      <header class="md-header" data-md-component="header">
+      
+
+<header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="MLCube" class="md-header__button md-logo" aria-label="MLCube" data-md-component="logo">
+    <a href="../.." title="MLCube" class="md-header__button md-logo" aria-label="MLCube" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -97,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Docker Runner
+              Kubernetes Runner
             
           </span>
         </div>
@@ -114,14 +116,18 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
       </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
-      </button>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -138,11 +144,14 @@
     
     
   </nav>
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
+        
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -158,7 +167,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="MLCube" class="md-nav__button md-logo" aria-label="MLCube" data-md-component="logo">
+    <a href="../.." title="MLCube" class="md-nav__button md-logo" aria-label="MLCube" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -177,7 +186,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -197,10 +206,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
-      <label class="md-nav__link" for="__nav_2">
-        Getting Started
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
@@ -209,40 +222,46 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/index.html" class="md-nav__link">
+      <a href="../../getting-started/" class="md-nav__link">
         Installation
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/hello-world.html" class="md-nav__link">
+      <a href="../../getting-started/hello-world/" class="md-nav__link">
         Hello World
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../getting-started/mnist.html" class="md-nav__link">
+      <a href="../../getting-started/mnist/" class="md-nav__link">
         MNIST
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -263,10 +282,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
       
-      <label class="md-nav__link" for="__nav_3">
-        Tutorials
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
@@ -275,16 +298,18 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="../tutorials/create-mlcube.html" class="md-nav__link">
+      <a href="../../tutorials/create-mlcube/" class="md-nav__link">
         How to Create an MLCube
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -307,10 +332,14 @@
       
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
       
-      <label class="md-nav__link" for="__nav_4">
-        Runners
-        <span class="md-nav__icon md-icon"></span>
-      </label>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Runners
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <nav class="md-nav" aria-label="Runners" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
@@ -319,18 +348,63 @@
         <ul class="md-nav__list" data-md-scrollfix>
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="index.html" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         Runners
       </a>
     </li>
   
 
+            
           
             
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker-runner/" class="md-nav__link">
+        Docker Runner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../singularity-runner/" class="md-nav__link">
+        Singularity Runner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ssh-runner/" class="md-nav__link">
+        SSH Runner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
   
   
     
@@ -345,15 +419,17 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Docker Runner
+          Kubernetes Runner
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="docker-runner.html" class="md-nav__link md-nav__link--active">
-        Docker Runner
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Kubernetes Runner
       </a>
       
         
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -368,15 +444,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-configuration-file" class="md-nav__link">
-    Platform Configuration File
+  <a href="#why-kubernetes" class="md-nav__link">
+    Why Kubernetes?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-configuration" class="md-nav__link">
-    Additional configuration
+  <a href="#design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-parameters" class="md-nav__link">
+    Configuration parameters
   </a>
   
 </li>
@@ -402,54 +485,35 @@
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="singularity-runner.html" class="md-nav__link">
-        Singularity Runner
+      <a href="../kubeflow/" class="md-nav__link">
+        Kubeflow Runner
       </a>
     </li>
   
 
+            
           
             
+              
   
   
   
     <li class="md-nav__item">
-      <a href="ssh-runner.html" class="md-nav__link">
-        SSH Runner
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="kubernetes.html" class="md-nav__link">
-        Kubernetes Runner
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="gcp-runner.html" class="md-nav__link">
+      <a href="../gcp-runner/" class="md-nav__link">
         GCP Runner
       </a>
     </li>
   
 
+            
           
         </ul>
       </nav>
@@ -469,6 +533,8 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
+
+
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
@@ -483,15 +549,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#platform-configuration-file" class="md-nav__link">
-    Platform Configuration File
+  <a href="#why-kubernetes" class="md-nav__link">
+    Why Kubernetes?
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-configuration" class="md-nav__link">
-    Additional configuration
+  <a href="#design" class="md-nav__link">
+    Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-parameters" class="md-nav__link">
+    Configuration parameters
   </a>
   
 </li>
@@ -523,57 +596,65 @@
               
                 
                 
-                <h1 id="docker-runner">Docker Runner<a class="headerlink" href="#docker-runner" title="Permanent link">&para;</a></h1>
-<p>Docker runner uses docker/nvidia-docker to run MLCube cubes. It supports two mandatory commands - <code>configure</code> and
-<code>run</code> with standard arguments - <code>mlcube</code>, <code>platform</code> and <code>task</code>. Docker platform configuration is used to configure
-docker runner.</p>
-<h2 id="platform-configuration-file">Platform Configuration File<a class="headerlink" href="#platform-configuration-file" title="Permanent link">&para;</a></h2>
-<p>Docker platform configuration file is a YAML file that follows <code>mlcube_docker</code> ML schema. The configuration file for the
-reference MNIST cube is the following:
-<div class="highlight"><pre><span></span><code><span class="nt">schema_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">1.0.0</span>
-<span class="nt">schema_type</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube_docker</span>
-
-<span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcommons/mlcube:mnist</span>   <span class="c1"># Docker image name</span>
-<span class="nt">docker_runtime</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">docker</span>      <span class="c1"># Docker executable: docker or nvidia-docker</span>
-</code></pre></div></p>
-<h2 id="additional-configuration">Additional configuration<a class="headerlink" href="#additional-configuration" title="Permanent link">&para;</a></h2>
-<p>In current implementation, Docker runner uses <code>http_proxy</code> and <code>https_proxy</code> environmental variables (if set) during
-configure and run phases:<br />
-- <strong>configure</strong>: <code>docker build ... --build-args http_proxy=${http_proxy} --build-args https_proxy=${https_proxy} ...</code><br />
-- <strong>run</strong>: <code>docker run ... -e http_proxy=${http_proxy} -e https_proxy=${https_proxy} ...</code>  </p>
-<h2 id="configuring-mlcubes">Configuring MLCubes<a class="headerlink" href="#configuring-mlcubes" title="Permanent link">&para;</a></h2>
-<p>Docker runner uses <code>{MLCUBE_ROOT}/build</code> directory as the build context directory. This implies that all files
-that must be packaged in a docker image, must be located in that directory, including source files, python requirements,
-resource files, ML models etc. The docker recipe must have the standard name <code>Dockerfile</code>.</p>
-<p>If <code>Dockerfile</code> file exists in <code>{MLCUBE_ROOT}/build</code>, the Docker runner assumes that it needs to <code>build</code> a docker
-image. If that file does not exists, the Docker runner will try to <code>pull</code> image with the specified name.</p>
-<p>Docker runner under the hood runs the following command line:<br />
-<div class="highlight"><pre><span></span><code>cd {build_path}; docker build {env_args} -t {image_name} -f Dockerfile .
-</code></pre></div>
-where:<br />
-- <code>{build_path}</code> is <code>{MLCUBE_ROOT}/build</code> root directory.<br />
-- <code>{env_args}</code> is the arguments retrieved from user environment. Currently, only <code>http_proxy</code> and <code>https_proxy</code> are
-  supported.<br />
--  <code>{image_name}</code> is the image name defined in the platform configuration file.  </p>
+                <h1 id="kubernetes-runner">Kubernetes Runner<a class="headerlink" href="#kubernetes-runner" title="Permanent link">&para;</a></h1>
+<p>The Kubernetes Runner runs a MLCube on a Kubernetes cluster.</p>
+<h2 id="why-kubernetes">Why Kubernetes?<a class="headerlink" href="#why-kubernetes" title="Permanent link">&para;</a></h2>
+<p>One of the key goals of the MLCube project is to enable portability of ML models.
+Kubernetes offers a good set of abstractions to enable model training to be portable
+across different compute platforms.</p>
+<h2 id="design">Design<a class="headerlink" href="#design" title="Permanent link">&para;</a></h2>
+<p><a href="http://bit.ly/cube-k8s-runner">Kubernetes Runner Proposal Doc</a></p>
+<p>The Kubernetes runner takes in a kubernetes specific task file in the <code>run</code> directory and re-uses the Docker runner
+platform config and prepares a Kubernetes Job manifest. The runner then creates the job on the Kubernetes cluster.</p>
+<p><img alt="Design" src="../../assets/mlcube-k8s.png" /></p>
+<h2 id="configuration-parameters">Configuration parameters<a class="headerlink" href="#configuration-parameters" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>The <code>configure</code> command is optional and users do not necessarily need to be aware about it. The Docker runner
-auto-detects if docker image exists before running a task, and if it does not exist, the docker runner runs the 
-<code>configure</code> command. During the <code>configure</code> phase, docker runner does not check if docker image exists. This means the
-following. If some of the implementation files have been modified, to rebuild the docker image users need to run
-the <code>configure</code> command explicitly.</p>
+<p>Currently, users must create persistent volume claim (PVC) that points to an actual MLCube workspace directory.</p>
 </blockquote>
-<h2 id="running-mlcubes">Running MLCubes<a class="headerlink" href="#running-mlcubes" title="Permanent link">&para;</a></h2>
-<p>Docker runner runs the following command:  <br />
-<div class="highlight"><pre><span></span><code>{docker_runtime} run --rm --net=host --privileged=true {volumes} {env_args} {image_name} {args}
+<div class="highlight"><pre><span></span><code><span class="c1"># By default, PVC name equals to the name of this MLCube (mnist, matmul, ...).</span>
+<span class="nt">pvc</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${name}</span>
+<span class="c1"># Use image name from docker configuration section.</span>
+<span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">${docker.image}</span>
 </code></pre></div>
-where:  <br />
-- <code>{docker_exec}</code> is the docker_runtime value from the Docker platform configuration file.<br />
-- <code>{volumes}</code> are the mount points that the runner automatically constructs based upon the task input/output
-  specifications.<br />
-- <code>{env_args}</code> is the arguments retrieved from user environment, currently, only <code>http_proxy</code> and <code>https_proxy</code> are
-  supported.<br />
-- <code>{image_name}</code> is the image name from the platform configuration file.<br />
-- <code>{args}</code> is the task command line arguments, constructed automatically by the runner.  </p>
+<p>The Kubernetes runner constructs the following Kubernetes Job manifest. </p>
+<div class="highlight"><pre><span></span><code><span class="nt">apiVersion</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">batch/v1</span>
+<span class="nt">kind</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Job</span>
+<span class="nt">metadata</span><span class="p">:</span>
+  <span class="nt">namespace</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">default</span>
+  <span class="nt">generateName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-mnist-</span>
+<span class="nt">spec</span><span class="p">:</span>
+  <span class="nt">template</span><span class="p">:</span>
+    <span class="nt">spec</span><span class="p">:</span>
+      <span class="nt">containers</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-container</span>
+        <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcommons/mlcube:mnist</span>
+        <span class="nt">args</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">--data_dir=/mnt/mlcube/mlcube-input/workspace/data</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">--model_dir=/mnt/mlcube/mlcube-output/workspace/model</span>
+        <span class="nt">volumeMounts</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-input</span>
+          <span class="nt">mountPath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/mnt/mlcube/mlcube-input</span>
+        <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-output</span>
+          <span class="nt">mountPath</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">/mnt/mlcube/mlcube-output</span>
+      <span class="nt">volumes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-input</span>
+        <span class="nt">persistentVolumeClaim</span><span class="p">:</span>
+          <span class="nt">claimName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-input</span>
+      <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-output</span>
+        <span class="nt">persistentVolumeClaim</span><span class="p">:</span>
+          <span class="nt">claimName</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mlcube-output</span>
+      <span class="nt">restartPolicy</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Never</span>
+  <span class="nt">backoffLimit</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">4</span>
+</code></pre></div>
+<h2 id="configuring-mlcubes">Configuring MLCubes<a class="headerlink" href="#configuring-mlcubes" title="Permanent link">&para;</a></h2>
+<p>This runner does not need configure step.</p>
+<h2 id="running-mlcubes">Running MLCubes<a class="headerlink" href="#running-mlcubes" title="Permanent link">&para;</a></h2>
+<p>Algorithm is following:</p>
+<ul>
+<li>Load Kubernetes configuration.</li>
+<li>Create job manifest (see above).</li>
+<li>Create job and wait for completion.</li>
+</ul>
                 
               
               
@@ -593,7 +674,7 @@ where:  <br />
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Runners" rel="prev">
+        <a href="../ssh-runner/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SSH Runner" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -602,20 +683,20 @@ where:  <br />
               <span class="md-footer__direction">
                 Previous
               </span>
-              Runners
+              SSH Runner
             </div>
           </div>
         </a>
       
       
         
-        <a href="singularity-runner.html" class="md-footer__link md-footer__link--next" aria-label="Next: Singularity Runner" rel="next">
+        <a href="../kubeflow/" class="md-footer__link md-footer__link--next" aria-label="Next: Kubeflow Runner" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Singularity Runner
+              Kubeflow Runner
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -629,10 +710,12 @@ where:  <br />
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        Made with
-        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+        
+          Made with
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            Material for MkDocs
+          </a>
+        
         
       </div>
       
@@ -644,10 +727,10 @@ where:  <br />
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.477d984a.min.js", "version": null}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.82b56eb2.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b1047164.min.js"></script>
       
     
   </body>
