@@ -13,10 +13,8 @@
       
       
       
-        <link rel="prev" href="../3d-unet/">
+        <link rel="prev" href="../object-detection/">
       
-      
-        <link rel="next" href="../bert/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -24,7 +22,7 @@
     
     
       
-        <title>ResNet - MLCube</title>
+        <title>Graph Neural Network - MLCube</title>
       
     
     
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#resnet" class="md-skip">
+        <a href="#graph-neural-network" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ResNet
+              Graph Neural Network
             
           </span>
         </div>
@@ -839,30 +837,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    ResNet
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../resnet/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -871,59 +849,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#project-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Project setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mlcube-tasks" class="md-nav__link">
-    <span class="md-ellipsis">
-      MLCube tasks
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#running-a-small-demo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Running a small demo
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -975,10 +900,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../gnn/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Graph Neural Network
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -987,6 +932,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#project-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project setup
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Project setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mlcube-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      MLCube tasks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-the-complete-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execute the complete pipeline
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1045,9 +1043,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#running-a-small-demo" class="md-nav__link">
+  <a href="#execute-the-complete-pipeline" class="md-nav__link">
     <span class="md-ellipsis">
-      Running a small demo
+      Execute the complete pipeline
     </span>
   </a>
   
@@ -1076,34 +1074,33 @@
   
 
 
-<h1 id="resnet">ResNet<a class="headerlink" href="#resnet" title="Permanent link">&para;</a></h1>
-<p>The benchmark reference for ResNet can be found in this <a href="https://github.com/mlcommons/training/tree/master/retired_benchmarks/resnet-tf2">link</a>, and here is the PR for the minified benchmark implementation: <a href="https://github.com/mlcommons/training/pull/686">link</a>.</p>
+<h1 id="graph-neural-network">Graph Neural Network<a class="headerlink" href="#graph-neural-network" title="Permanent link">&para;</a></h1>
+<p>The benchmark reference for Graph Neural Network can be found in this <a href="https://github.com/mlcommons/training/tree/master/graph_neural_network">link</a>, and here is the PR for the minified benchmark implementation: <a href="https://github.com/mlcommons/training/pull/762">link</a>.</p>
 <h2 id="project-setup">Project setup<a class="headerlink" href="#project-setup" title="Permanent link">&para;</a></h2>
+<p>An important requirement is that you must have Docker installed.</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Create Python environment and install MLCube Docker runner </span>
 virtualenv<span class="w"> </span>-p<span class="w"> </span>python3<span class="w"> </span>./env<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>./env/bin/activate<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">pip</span><span class="o">==</span><span class="m">24</span>.0<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mlcube-docker
-
 <span class="c1"># Fetch the implementation from GitHub</span>
-git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mlcommons/training<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>./training/image_classification
-git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>pull/686/head:feature/resnet_mlcube<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>feature/resnet_mlcube
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mlcommons/training<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>./training
+git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span>pull/762/head:feature/mlcube_graph_nn<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>checkout<span class="w"> </span>feature/mlcube_graph_nn
+<span class="nb">cd</span><span class="w"> </span>./graph_neural_network/mlcube
 </code></pre></div>
-<p>Go to mlcube directory and study what tasks MLCube implements.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>./mlcube
-mlcube<span class="w"> </span>describe
+<p>Inside the mlcube directory run the following command to check implemented tasks.</p>
+<div class="highlight"><pre><span></span><code>mlcube<span class="w"> </span>describe
 </code></pre></div>
 <h3 id="mlcube-tasks">MLCube tasks<a class="headerlink" href="#mlcube-tasks" title="Permanent link">&para;</a></h3>
-<p>For the entire <a href="https://image-net.org/">IMAGENET</a> dataset, you will need to download the complete dataset and place it in the workspace under the mlcube folder, then you can use the following tasks:</p>
+<p>Download dataset.</p>
+<div class="highlight"><pre><span></span><code>mlcube<span class="w"> </span>run<span class="w"> </span>--task<span class="o">=</span>download_data<span class="w"> </span>-Pdocker.build_strategy<span class="o">=</span>always
+</code></pre></div>
 <p>Process dataset.</p>
 <div class="highlight"><pre><span></span><code>mlcube<span class="w"> </span>run<span class="w"> </span>--task<span class="o">=</span>process_data<span class="w"> </span>-Pdocker.build_strategy<span class="o">=</span>always
 </code></pre></div>
-<p>Train RESNET.</p>
+<p>Train GNN.</p>
 <div class="highlight"><pre><span></span><code>mlcube<span class="w"> </span>run<span class="w"> </span>--task<span class="o">=</span>train<span class="w"> </span>-Pdocker.build_strategy<span class="o">=</span>always
 </code></pre></div>
-<p>Run compliance checker.</p>
-<div class="highlight"><pre><span></span><code>mlcube<span class="w"> </span>run<span class="w"> </span>--task<span class="o">=</span>check_logs<span class="w"> </span>-Pdocker.build_strategy<span class="o">=</span>always
-</code></pre></div>
-<h3 id="running-a-small-demo">Running a small demo<a class="headerlink" href="#running-a-small-demo" title="Permanent link">&para;</a></h3>
-<p>To download the susample dataset and run the demo use the following command:</p>
-<div class="highlight"><pre><span></span><code>mlcube<span class="w"> </span>run<span class="w"> </span>--task<span class="o">=</span>download_demo,demo<span class="w"> </span>-Pdocker.build_strategy<span class="o">=</span>always
+<h3 id="execute-the-complete-pipeline">Execute the complete pipeline<a class="headerlink" href="#execute-the-complete-pipeline" title="Permanent link">&para;</a></h3>
+<p>You can execute the complete pipeline with one single command.</p>
+<div class="highlight"><pre><span></span><code>mlcube<span class="w"> </span>run<span class="w"> </span>--task<span class="o">=</span>download_data,process_data,train<span class="w"> </span>-Pdocker.build_strategy<span class="o">=</span>always
 </code></pre></div>
 
 
